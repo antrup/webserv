@@ -2,7 +2,7 @@
 HTTP server in C++ 98
 
 ### Build
-./make
+make
 
 ### Run
 ./webserv [configuration file]
