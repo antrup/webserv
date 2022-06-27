@@ -1,0 +1,79 @@
+max_body_size 120;
+server {
+    listen_port 8887;
+    listen_host 127.0.0.1;
+    server_name localhost;
+
+    error 404 /tmp/a404.html;
+    error 402 /tmp/site/errors/error402.html;
+
+location    / {
+    extension php /tmp/testcgi.sh;
+    extension js /tmp/testcgi.out;
+    method POST GET DELETE;
+    index index.html;
+    list_directory false;
+    root /tmp;
+}
+location    /home {
+    extension php /tmp/testcgi.sh;
+    extension js /tmp/testcgi.out;
+    method POST GET DELETE;
+    index test.html;
+    list_directory false;
+    root /tmp;
+}
+}
+server {
+
+    listen_port 8886;
+    listen_host 127.0.0.1;
+    server_name localhost;
+
+    error 404 /tmp/site/errors/error404.html;
+    error 402 /tmp/site/errors/error402.html;
+
+location    / {
+    extension php /tmp/testcgi.sh;
+    extension js /tmp/testcgi.out;
+    method POST GET DELETE;
+    index index.html;
+    list_directory false;
+    root /tmp;
+    upload /tmp/upload;
+}
+location    /home {
+    extension php /tmp/testcgi.sh;
+    extension js /tmp/testcgi.out;
+    method POST GET DELETE;
+    index test.html;
+    list_directory false;
+    root /tmp;
+}
+}
+server {
+
+    listen_port 8889;
+    listen_host 127.0.0.1;
+    server_name localhost;
+
+    error 404 /tmp/p404.html;
+    error 402 /tmp/site/errors/error402.html;
+
+location    / {
+    extension php /tmp/testcgi.sh;
+    extension js /tmp/testcgi.out;
+    method POST GET DELETE;
+    index index.html;
+    list_directory false;
+    root /etc;
+}
+location    /home {
+    extension php /tmp/testcgi.sh;
+    extension js /tmp/testcgi.out;
+    method POST GET DELETE;
+    index test.html;
+    list_directory true;
+    root /etc;
+}
+}

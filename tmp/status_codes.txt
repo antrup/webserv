@@ -1,0 +1,79 @@
+// Status codes	- Meaning
+
+// 1xx Informational	 
+
+responce.[100]="Continue"
+responce.[101]="Switching protocols"
+responce.[102]="Processing"
+responce.[103]="Early Hints"
+
+// 2xx Succesful	 
+
+responce.[200]="OK"
+responce.[201]="Created"
+responce.[202]="Accepted"
+responce.[203]="Non-Authoritative Information"
+responce.[204]="No Content"
+responce.[205]="Reset Content"
+responce.[206]="Partial Content"
+responce.[207]="Multi-Status"
+responce.[208]="Already Reported"
+responce.[226]="IM Used"
+
+// 3xx Redirection	 
+
+responce[300]="Multiple Choices"
+responce[301]="Moved Permanently"
+responce[302]="Found (Previously "Moved Temporarily")"
+responce[303]="See Other"
+responce[304]="Not Modified"
+responce[305]="Use Proxy"
+responce[306]="Switch Proxy"
+responce[307]="Temporary Redirect"
+responce[308]="Permanent Redirect"
+
+// 4xx Client Error	 
+
+responce[400]="Bad Request"
+responce[401]="Unauthorized"
+responce[402]="Payment Required"
+responce[403]="Forbidden"
+responce[404]="Not Found"
+responce[405]="Method Not Allowed"
+responce[406]="Not Acceptable"
+responce[407]="Proxy Authentication Required"
+responce[408]="Request Timeout"
+responce[409]="Conflict"
+responce[410]="Gone"
+responce[411]="Length Required"
+responce[412]="Precondition Failed"
+responce[413]="Payload Too Large"
+responce[414]="URI Too Long"
+responce[415]="Unsupported Media Type"
+responce[416]="Range Not Satisfiable"
+responce[417]="Expectation Failed"
+responce[418]="I'm a Teapot"
+responce[421]="Misdirected Request"
+responce[422]="Unprocessable Entity"
+responce[423]="Locked"
+responce[424]="Failed Dependency"
+responce[425]="Too Early"
+responce[426]="Upgrade Required"
+responce[428]="Precondition Required"
+responce[429]="Too Many Requests"
+responce[431]="Request Header Fields Too Large"
+responce[451]="Unavailable For Legal Reasons"
+
+// 5xx Server Error	 
+
+responce[500]="Internal Server Error"
+responce[501]="Not Implemented"
+responce[502]="Bad Gateway"
+responce[503]="Service Unavailable"
+responce[504]="Gateway Timeout"
+responce[505]="HTTP Version Not Supported"
+responce[506]="Variant Also Negotiates"
+responce[507]="Insufficient Storage"
+responce[508]="Loop Detected"
+responce[510]="Not Extended"
+responce[511]="Network Authentication Required"
